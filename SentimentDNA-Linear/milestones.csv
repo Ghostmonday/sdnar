@@ -1,0 +1,26 @@
+Title,Description,Priority,Status,Labels,Estimate
+"M1: Data Integrity Lock","Define canonical symbols, intervals, adjustments, and corporate actions. Checksums and row-count parity across mirrored stores.",Urgent,Backlog,"validation,evidence",8
+"M2: Benchmark Baselines","Momentum, mean-reversion, regime classifiers, naïve Bayes. Reproducible runs with fixed seeds.",Urgent,Backlog,"validation,evidence",13
+"M3: Blind Historical Tests","Time-sliced out-of-sample evaluations with embargo periods. No code access for validators.",Urgent,Backlog,"validation,gate",8
+"M4: Accuracy Thresholds Met","Pre-set cutoffs for trend, reversal, anomaly detection. Thresholds met in 3 independent datasets.",Urgent,Backlog,"validation,gate,evidence",5
+"M5: NDA Private Tester Program Ready","10 testers onboarded under NDA. Secure portal, feedback capture, no PII leakage.",High,Backlog,"validation,compliance",8
+"M6: Messaging and Collateral","Empirical value narrative, methodology guardrails, limits and ethics. Reviewed by external advisors.",High,Backlog,"compliance",5
+"M7: Host-Led Presentation Assets","Founder off-stage, live-switch plan, Q&A boundaries. 2 full rehearsals.",High,Backlog,"event",8
+"M8: Pricing and Tiers","Early Believer, Whale Table, Ghost Ticket. Benefits, limits, refund policy.",High,Backlog,"payment",5
+"M9: Key Issuance Mechanism","Soulbound non-transferable keys. Issuance, expiry, revocation tested.",High,Backlog,"event,gate",8
+"M10: Financial Ops Ready","Card + wire + crypto payments. Invoicing, dunning, refunds. Zero reconciliation drift.",High,Backlog,"payment",8
+"M11: Registration and KYC-Lite","Pre-qualification, NDA checkbox, policy acceptance. Roster reconciles with payment.",High,Backlog,"event,compliance",5
+"M12: Environment Hardening","Host-only channels, moderation protocol, failover tested.",High,Backlog,"event,security",5
+"M13: Live Event Run-of-Show","Checklist ticker, host prompts, scene-switch markers, timing alerts.",High,Backlog,"event",8
+"M14: Auction Mechanics","Timeboxed auction, transparent rules, anti-sniping buffer. 3 mock auctions.",High,Backlog,"event,payment",8
+"M15: Post-Event Conversion Flows","72-hour subscriber upsell window. Landing pages live, discount codes tested.",Medium,Backlog,"event,subscription",5
+"M16: Pricing Verification and Cohort Design","$500, $1,500, $5,000/month tiers. SLA table, entitlements enforced.",Medium,Backlog,"subscription,payment",5
+"M17: Delivery Cadence and Packaging","Weekly/biweekly drops, alert formats, revision policy. >70% open rate.",Medium,Backlog,"subscription",8
+"M18: Renewal/Dunning and Churn Rescue","30/7/1 day reminders, grace periods, downgrade offers. Recovery rate target met.",Medium,Backlog,"subscription,payment",5
+"M19: Member Observability and NPS","Structured surveys, NPS > 50, anomaly reports pipeline.",Medium,Backlog,"subscription",5
+"M20: Compliance and Claims Governance","Every claim linked to evidence artifact. Review passed before publish.",Medium,Backlog,"compliance,gate",5
+"M21: Identity Insulation","No founder exposure. Proxy agents for all public comms.",High,Backlog,"security",3
+"M22: Threat Model and Response Playbooks","Doxxing, harassment, spear-phishing, deepfakes. Monitoring live.",High,Backlog,"security,risk",5
+"M23: Surface Minimization","Separate domains, emails, PO boxes, entities. High-risk removed/obfuscated.",High,Backlog,"security",3
+"M24: Legal Shields and NDAs","Counsel-signed NDAs, terms, privacy policy. Enforcement runbooks tested.",High,Backlog,"compliance,security",5
+"M25: Crisis Management Rehearsal","Incident sims with comms trees. Hotwash report, improvements logged.",Medium,Backlog,"security,risk",3

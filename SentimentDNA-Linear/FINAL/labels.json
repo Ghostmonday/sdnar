@@ -1,0 +1,59 @@
+{
+  "labels": [
+    {
+      "name": "validation",
+      "color": "#4CAF50",
+      "description": "Evidence and testing phase - requires proof artifacts"
+    },
+    {
+      "name": "evidence",
+      "color": "#2196F3",
+      "description": "Requires documented proof/artifacts to proceed"
+    },
+    {
+      "name": "gate",
+      "color": "#F44336",
+      "description": "Hard stop checkpoint - must pass to proceed"
+    },
+    {
+      "name": "automation",
+      "color": "#9C27B0",
+      "description": "Automated job or workflow"
+    },
+    {
+      "name": "security",
+      "color": "#E91E63",
+      "description": "Security-related task or concern"
+    },
+    {
+      "name": "payment",
+      "color": "#FF9800",
+      "description": "Payment, billing, or financial operations"
+    },
+    {
+      "name": "event",
+      "color": "#00BCD4",
+      "description": "Genesis Key Drop event related"
+    },
+    {
+      "name": "subscription",
+      "color": "#8BC34A",
+      "description": "Recurring revenue and subscriber management"
+    },
+    {
+      "name": "risk",
+      "color": "#FF5722",
+      "description": "Tracked hazard requiring mitigation"
+    },
+    {
+      "name": "compliance",
+      "color": "#607D8B",
+      "description": "Legal, regulatory, or policy compliance"
+    }
+  ],
+  "linear_cli_notes": {
+    "usage": "Labels are created manually in Linear Settings > Labels before import, or auto-created during CLI import if they do not exist",
+    "color_format": "Hex colors without alpha channel",
+    "csv_reference": "In CSV files, labels are pipe-separated (|) not comma-separated"
+  }
+}

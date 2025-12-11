@@ -1,0 +1,71 @@
+Title,Description,Priority,Status,Labels,Estimate
+"Host-Only Policy Enforcement","No founder exposure; proxy agents for all public comms.
+
+**Acceptance Criteria:**
+- All external materials list host only
+- Founder name absent from all public docs
+- Proxy email/phone configured
+- Review checklist for new materials",High,Backlog,"security",3
+"Threat Model Documentation","Document doxxing, harassment, spear-phishing, deepfake risks.
+
+**Acceptance Criteria:**
+- All threat vectors documented
+- Mitigations mapped per threat
+- Monitoring systems identified
+- Response procedures defined",High,Backlog,"security,risk",5
+"Surface Minimization Audit","Inventory and reduce public touchpoints.
+
+**Acceptance Criteria:**
+- All public touchpoints inventoried
+- High-risk items removed/obfuscated
+- Separate domains/emails configured
+- Entity structure documented",High,Backlog,"security",5
+"Privacy Infrastructure Setup","Separate domains, emails, PO boxes, entities.
+
+**Acceptance Criteria:**
+- All infrastructure provisioned
+- Access controls configured
+- Documentation complete
+- Tested for leakage",High,Backlog,"security",5
+"NDA and Legal Document Suite","NDAs, terms, privacy policy with counsel sign-off.
+
+**Acceptance Criteria:**
+- All documents counsel-signed
+- Version control active
+- Distribution tracked
+- Enforcement runbooks written",High,Backlog,"compliance,security",5
+"Takedown Procedure Development","Legal templates and rapid response workflows.
+
+**Acceptance Criteria:**
+- Templates for major platforms
+- Response SLA defined
+- Evidence preservation process
+- Escalation contacts listed",High,Backlog,"security,compliance",3
+"Crisis Drill Execution","Incident simulations with comms trees.
+
+**Acceptance Criteria:**
+- At least 2 drills completed
+- Hotwash reports filed
+- Improvements logged
+- Retest scheduled",Medium,Backlog,"security,risk",5
+"Brand Monitoring Automation","Brand mentions, domain lookups, image/video flags.
+
+**Acceptance Criteria:**
+- Monitoring tools configured
+- Alerts to designated channels
+- Auto-create incidents in Linear
+- Daily digest reports",High,Backlog,"automation,security",5
+"Access Proxying System","Role-based keys with session recording.
+
+**Acceptance Criteria:**
+- Proxied access for public-facing ops
+- Sessions recorded and stored
+- Revocation scripts tested
+- Audit log complete",High,Backlog,"automation,security",5
+"Legal Template Injector","Pre-approved responses and takedown sequences.
+
+**Acceptance Criteria:**
+- Response library complete
+- Templates version controlled
+- Preservation workflow integrated
+- One-click deployment tested",Medium,Backlog,"automation,compliance",5

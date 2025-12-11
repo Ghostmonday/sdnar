@@ -1,0 +1,7 @@
+Title,Description,Priority,State,Labels,Estimate,Team,Assignee,Project,Milestone,Parent
+"Phase 1 — Product Validation","Absolute certainty in data integrity, model accuracy, and testing rigor. All claims must be backed by evidence. Gate: Accuracy thresholds met in 3 independent datasets.",1,Backlog,validation|evidence|gate,,S-DNA,,,Phase 1,
+"Phase 2 — Monetization Architecture","Controlled debut of pricing, messaging, and payment systems. Host-led presentation with founder off-stage. Gate: All tiers tested with live transactions.",2,Backlog,payment|compliance,,S-DNA,,,Phase 2,
+"Genesis Key Drop — Event Execution","Live event for soulbound key issuance and whale table auction. Registration, KYC-lite, and conversion flows. Gate: Dry runs passed.",2,Backlog,event|gate,,S-DNA,,,Genesis Event,
+"Recurring Revenue — Subscription Engine","Subscription tiers ($500/$1,500/$5,000), insight delivery, renewal/dunning, and member observability. Gate: NPS > 50.",3,Backlog,subscription|payment,,S-DNA,,,Subscription,
+"Founder Protection — Identity, Privacy, Safety","Identity insulation, threat modeling, surface minimization, and crisis playbooks. Gate: All public materials list host only.",2,Backlog,security|compliance,,S-DNA,,,Protection,
+"Ops Backbone — Automation, Observability, Runbooks","Workflow states, zero-chance gates, dashboards, alerts, and SLOs. Gate: All automations retriable and fail-closed.",3,Backlog,automation|gate,,S-DNA,,,Ops,

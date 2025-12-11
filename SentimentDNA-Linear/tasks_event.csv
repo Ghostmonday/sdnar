@@ -1,0 +1,71 @@
+Title,Description,Priority,Status,Labels,Estimate
+"Registration Portal Build","Pre-qualification form with NDA checkbox and policy acceptance.
+
+**Acceptance Criteria:**
+- Form validations complete
+- NDA checkbox legally compliant
+- Attendee roster auto-generated
+- Confirmation emails automated",High,Backlog,"event,compliance",5
+"KYC-Lite Verification","Lightweight identity verification for high-value attendees.
+
+**Acceptance Criteria:**
+- Verification flow complete
+- Decline flow gracefully handled
+- Privacy-compliant data handling
+- Audit log captured",High,Backlog,"event,compliance",5
+"Live Stream Security Setup","Host-only channels with moderation protocol.
+
+**Acceptance Criteria:**
+- Chat-to-face disabled
+- Moderation rules active
+- Dry run with simulated trolls passed
+- Failover tested",High,Backlog,"event,security",5
+"Showtime Runner System","Checklist ticker, host prompts, scene-switch markers.
+
+**Acceptance Criteria:**
+- Real-time checklist visible to crew
+- Host prompts display on cue
+- Scene switches logged
+- Timing alerts functional",High,Backlog,"event,automation",8
+"Auction Engine Development","Bid validation, anti-sniping extension, settlement ledger.
+
+**Acceptance Criteria:**
+- 3 mock auctions completed
+- Anti-sniping buffer tested
+- Settlement proven accurate
+- Top bid announcement automated",High,Backlog,"event,payment",13
+"Auction Settlement Flow","Validate identity and funds, post final ledger.
+
+**Acceptance Criteria:**
+- Identity verified pre-settlement
+- Funds confirmed before award
+- Ledger posted to Linear
+- Press release triggered",High,Backlog,"event,payment",5
+"Conversion Landing Pages","72-hour window pages for subscriber upsell.
+
+**Acceptance Criteria:**
+- Pages live and tested
+- Click-to-subscribe flow working
+- Discount codes validated
+- Analytics tracking enabled",Medium,Backlog,"event,subscription",5
+"Post-Event Email Sequences","Automated follow-up for attendees and subscribers.
+
+**Acceptance Criteria:**
+- Welcome sequence configured
+- Upsell sequence for non-converts
+- Analytics tracking
+- Unsubscribe working",Medium,Backlog,"event,subscription,automation",5
+"Registration Funnel Automation","Form validations, auto-key pre-issue, decline flow.
+
+**Acceptance Criteria:**
+- Invalid submissions rejected gracefully
+- Keys pre-issued on approval
+- Decline notifications sent
+- Retry allowed within window",High,Backlog,"automation,event",5
+"Post-Event Conversion Automation","Subscriber flow scoring, auto-issue tasks for follow-ups.
+
+**Acceptance Criteria:**
+- Scoring algorithm implemented
+- High-intent leads flagged
+- Sales tasks auto-created
+- Metrics to dashboard",Medium,Backlog,"automation,subscription",5

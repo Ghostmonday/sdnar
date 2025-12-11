@@ -1,0 +1,78 @@
+Title,Description,Priority,Status,Labels,Estimate
+"Data Schema Freeze","Define canonical symbols, intervals, adjustments, and corporate actions.
+
+**Acceptance Criteria:**
+- Checksums and row-count parity across mirrored stores
+- Drift < 0.1% week-over-week
+- Schema documentation complete
+- Data dictionary published",Urgent,Backlog,"validation,evidence",5
+"Feed Watchdogs Setup","Implement health checks for latency, gap detection, and source quorum.
+
+**Acceptance Criteria:**
+- Alerts within 30s of missing bars
+- Auto backfill succeeds 3 consecutive runs
+- Monitoring dashboard live
+- Runbook for manual intervention",Urgent,Backlog,"validation,automation",5
+"Baseline Models Implementation","Build momentum, mean-reversion, regime classifiers, naïve Bayes models.
+
+**Acceptance Criteria:**
+- Reproducible runs with fixed seeds
+- Report ZIPs with plots and CSVs
+- Model cards documented
+- Performance metrics captured",Urgent,Backlog,"validation,evidence",13
+"Blind Backtests Execution","Run time-sliced out-of-sample evaluations with embargo periods.
+
+**Acceptance Criteria:**
+- No code access for validators
+- Results signed and timestamped
+- Audit trail stored in evidence locker
+- Independent verification documented",Urgent,Backlog,"validation,gate,evidence",8
+"Accuracy Thresholds Definition","Define pre-set cutoffs for trend, reversal, anomaly detection.
+
+**Acceptance Criteria:**
+- Thresholds met in 3 independent datasets
+- P-values documented
+- Statistical methodology reviewed
+- Confidence intervals stated",Urgent,Backlog,"validation,gate",3
+"Private Tester NDA Program","Onboard testers under NDA with secure portal and feedback capture.
+
+**Acceptance Criteria:**
+- 10 testers onboarded
+- Feedback variance analyzed
+- No PII leakage verified
+- NDA signed and filed",High,Backlog,"validation,compliance",5
+"Data Integrity Automation Job","Nightly checksums, schema diffs, drift reports with auto-ticket on failure.
+
+**Acceptance Criteria:**
+- Cron job scheduled and running
+- Tickets auto-created on failures
+- Retry logic implemented
+- Logs captured in observability platform",High,Backlog,"automation",5
+"Benchmark Pipeline Automation","Parameter grid runs, artifact bundling, hash-stamped reports linked to Linear.
+
+**Acceptance Criteria:**
+- Pipeline triggers on schedule and on-demand
+- Artifacts uploaded to evidence locker
+- Linear issues updated with links
+- Regression alerts configured",High,Backlog,"automation",8
+"Backtest Orchestrator","Sliding windows, embargo logic, retries on transient errors, fail closed on regression.
+
+**Acceptance Criteria:**
+- Embargo periods enforced
+- Transient errors retried (max 3 attempts)
+- Metric regressions block progression
+- Human escalation on final failure",High,Backlog,"automation,gate",8
+"Evidence Locker Setup","Immutable storage for PDFs/CSVs/plots with Linear issue attachments and hash recording.
+
+**Acceptance Criteria:**
+- Storage bucket configured
+- Hash recorded in issue comments
+- Retention policy set
+- Access audit logging enabled",High,Backlog,"evidence,automation",5
+"Gatekeeper Automation Rules","Status automation blocking 'Validated' unless evidence and tests pass.
+
+**Acceptance Criteria:**
+- Linear workflow rules configured
+- Manual override requires approval
+- Audit log for state transitions
+- Documentation complete",High,Backlog,"automation,gate",3

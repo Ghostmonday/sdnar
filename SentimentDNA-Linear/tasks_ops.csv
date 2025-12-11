@@ -1,0 +1,71 @@
+Title,Description,Priority,Status,Labels,Estimate
+"Linear Workflow Configuration","Set up custom workflow states with transition rules.
+
+**Acceptance Criteria:**
+- 10 states configured (Backlog → Completed)
+- Transition rules enforced
+- Evidence requirements documented
+- Team trained on process",High,Backlog,"gate",5
+"Zero-Chance Gate Implementation","Validation, security, claims, and payment gates.
+
+**Acceptance Criteria:**
+- Validation gate blocks without evidence
+- Security gate blocks high-risk without counsel
+- Claims gate blocks without evidence links
+- Payment gate withholds keys until confirmed",High,Backlog,"gate,automation",8
+"Data Dashboard Setup","Data integrity, model performance, funnel metrics.
+
+**Acceptance Criteria:**
+- Real-time data integrity view
+- Model performance trends
+- Funnel conversion rates
+- Export functionality",Medium,Backlog,"automation",8
+"Revenue Dashboard Setup","Revenue by tier, MRR, churn, LTV.
+
+**Acceptance Criteria:**
+- Revenue breakdown by cohort
+- Churn rate tracking
+- LTV calculations
+- Forecasting view",Medium,Backlog,"automation",5
+"NPS and Feedback Dashboard","Member satisfaction and feedback trends.
+
+**Acceptance Criteria:**
+- NPS score tracking
+- Feedback categorization
+- Trend analysis
+- Alert on drops",Medium,Backlog,"automation,subscription",5
+"Security Incident Dashboard","Threat heatmap and incident tracking.
+
+**Acceptance Criteria:**
+- Active incidents visible
+- Threat level indicators
+- Resolution time tracking
+- Historical analysis",Medium,Backlog,"automation,security",5
+"Alert System Configuration","Regression, drift, payment, security alerts.
+
+**Acceptance Criteria:**
+- Alert thresholds defined
+- Notification channels configured
+- Escalation rules set
+- On-call rotation integrated",High,Backlog,"automation",5
+"SLO Definition and Tracking","Define targets and auto-raise tickets on breach.
+
+**Acceptance Criteria:**
+- SLOs for all critical systems
+- Automated breach detection
+- Tickets created on breach
+- Weekly review cadence set",High,Backlog,"automation,gate",5
+"Weekly Review Automation","Scheduled summary issues with metrics.
+
+**Acceptance Criteria:**
+- Weekly issue auto-created
+- Key metrics summarized
+- Action items tracked
+- Stakeholders notified",Medium,Backlog,"automation",3
+"Runbook Library Creation","Step-by-step procedures for all critical operations.
+
+**Acceptance Criteria:**
+- Runbook for each automation
+- Rollback steps included
+- Links to monitoring
+- Version controlled",High,Backlog,"automation",8

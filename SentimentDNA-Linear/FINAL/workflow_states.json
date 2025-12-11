@@ -1,0 +1,157 @@
+{
+  "workflow": {
+    "name": "SentimentDNA Zero-Chance Workflow",
+    "description": "Workflow with gate-based progression and evidence requirements",
+    "linear_cli_notes": "Workflow states must be configured manually in Linear Settings > Team Settings > Workflow States. The CLI imports issues with State column matching existing state names.",
+    "states": [
+      {
+        "name": "Backlog",
+        "type": "backlog",
+        "color": "#95a9b8",
+        "position": 0,
+        "description": "Ideas and ungroomed items"
+      },
+      {
+        "name": "Ready",
+        "type": "unstarted",
+        "color": "#bec2c8",
+        "position": 1,
+        "description": "Groomed and ready to start"
+      },
+      {
+        "name": "In Progress",
+        "type": "started",
+        "color": "#f2c94c",
+        "position": 2,
+        "description": "Active work underway"
+      },
+      {
+        "name": "Review",
+        "type": "started",
+        "color": "#e99f38",
+        "position": 3,
+        "description": "Ready for peer review"
+      },
+      {
+        "name": "Validation",
+        "type": "started",
+        "color": "#f2994a",
+        "position": 4,
+        "description": "Awaiting evidence and test validation"
+      },
+      {
+        "name": "Gate Passed",
+        "type": "started",
+        "color": "#6fcf97",
+        "position": 5,
+        "description": "All gate criteria met"
+      },
+      {
+        "name": "Scheduled",
+        "type": "started",
+        "color": "#56ccf2",
+        "position": 6,
+        "description": "Queued for deployment/execution"
+      },
+      {
+        "name": "Live",
+        "type": "started",
+        "color": "#5e6ad2",
+        "position": 7,
+        "description": "Deployed to production"
+      },
+      {
+        "name": "Monitor",
+        "type": "started",
+        "color": "#9b51e0",
+        "position": 8,
+        "description": "Post-deployment observation period"
+      },
+      {
+        "name": "Completed",
+        "type": "completed",
+        "color": "#4caf50",
+        "position": 9,
+        "description": "Successfully finished"
+      },
+      {
+        "name": "Canceled",
+        "type": "canceled",
+        "color": "#95a9b8",
+        "position": 10,
+        "description": "No longer needed"
+      }
+    ]
+  },
+  "gates": {
+    "validation_gate": {
+      "name": "Validation Gate",
+      "description": "Blocks progression unless accuracy thresholds met and evidence linked",
+      "blocking_conditions": [
+        "No evidence artifacts attached",
+        "Linked tests not passed",
+        "Accuracy below threshold"
+      ],
+      "override_requires": "Manual approval with justification"
+    },
+    "security_gate": {
+      "name": "Security Gate",
+      "description": "Blocks publication if threat level exceeds threshold",
+      "blocking_conditions": [
+        "Threat level > Medium",
+        "Unmitigated high-impact risks"
+      ],
+      "override_requires": "Counsel sign-off"
+    },
+    "claims_gate": {
+      "name": "Claims Gate",
+      "description": "Blocks publishing if assertions lack evidence links",
+      "blocking_conditions": [
+        "Any claim without evidence artifact link",
+        "Unapproved language in copy"
+      ],
+      "override_requires": "Legal review"
+    },
+    "payment_gate": {
+      "name": "Payment Gate",
+      "description": "Withholds access keys until payment confirmed",
+      "blocking_conditions": [
+        "Payment webhook not confirmed",
+        "Reconciliation drift != 0"
+      ],
+      "override_requires": "Finance approval"
+    }
+  },
+  "slos": {
+    "data_integrity": {
+      "name": "Data Integrity",
+      "target": "99.9% checksum parity",
+      "measurement": "Daily automated check",
+      "breach_action": "P1 ticket auto-created"
+    },
+    "model_accuracy": {
+      "name": "Model Accuracy",
+      "target": "Above defined thresholds per metric",
+      "measurement": "Daily evaluation run",
+      "breach_action": "Block deployment, escalate"
+    },
+    "payment_reconciliation": {
+      "name": "Payment Reconciliation",
+      "target": "0% drift",
+      "measurement": "Nightly reconciliation job",
+      "breach_action": "Hold new key issuance"
+    },
+    "alert_response": {
+      "name": "Alert Response Time",
+      "target": "< 15 minutes acknowledgment",
+      "measurement": "On-call metrics",
+      "breach_action": "Escalation to backup"
+    },
+    "content_delivery": {
+      "name": "Content Delivery Rate",
+      "target": "> 99% successful delivery",
+      "measurement": "Per drop tracking",
+      "breach_action": "Retry and escalate"
+    }
+  }
+}

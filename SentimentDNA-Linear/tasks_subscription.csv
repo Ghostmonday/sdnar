@@ -1,0 +1,85 @@
+Title,Description,Priority,Status,Labels,Estimate
+"Cohort Tier Architecture","$500, $1,500, $5,000/month tiers with differential entitlements.
+
+**Acceptance Criteria:**
+- SLA table published
+- Entitlements enforced in gate
+- Audit of access controls passed
+- Upgrade/downgrade logic tested",Medium,Backlog,"subscription,payment",5
+"Insight Packaging Design","Weekly/biweekly drop templates with alert formats.
+
+**Acceptance Criteria:**
+- Templates approved by stakeholders
+- Version stamps implemented
+- Delivery analytics > 70% open
+- Revision policy documented",Medium,Backlog,"subscription",5
+"Delivery Cadence Configuration","Schedule setup for insight drops across tiers.
+
+**Acceptance Criteria:**
+- Cron jobs configured
+- Tier-specific timing honored
+- Timezone handling correct
+- Manual override available",Medium,Backlog,"subscription,automation",3
+"Renewal Reminder Sequence","30/7/1 day reminders with grace periods.
+
+**Acceptance Criteria:**
+- Email templates approved
+- Timing accurate to SLA
+- Grace period logic working
+- Downgrade offers integrated",Medium,Backlog,"subscription,payment",3
+"Churn Rescue Flows","Downgrade offers and win-back campaigns.
+
+**Acceptance Criteria:**
+- Downgrade path tested
+- Win-back sequence configured
+- Churn reason codes captured
+- Analytics dashboard live",Medium,Backlog,"subscription",5
+"Member Feedback System","Structured surveys with NPS and anomaly detection.
+
+**Acceptance Criteria:**
+- Survey templates deployed
+- NPS tracking live
+- Anomaly pipeline operational
+- Response SLA met",Medium,Backlog,"subscription",5
+"Claims Governance Framework","Every claim linked to evidence artifact.
+
+**Acceptance Criteria:**
+- Claims database created
+- Evidence links mandatory
+- Review workflow defined
+- Publish blocked without approval",Medium,Backlog,"compliance,gate",5
+"Drop Scheduler Automation","Content assembly, multi-channel delivery, logging.
+
+**Acceptance Criteria:**
+- Scheduler runs on cadence
+- Multi-channel (email/Slack/app) working
+- Logs to Linear with coverage stats
+- Retry on delivery failures",Medium,Backlog,"automation,subscription",8
+"Entitlement Gate System","Tier-based access rules with audit reports.
+
+**Acceptance Criteria:**
+- Access correctly gated per tier
+- Upgrades instant
+- Downgrades respect grace period
+- Monthly audit reports generated",Medium,Backlog,"automation,subscription",5
+"Renewal/Dunning Workflow Automation","Auto-reminders, payment retries, human escalation.
+
+**Acceptance Criteria:**
+- Reminders sent per schedule
+- 3 payment retries with backoff
+- Human escalation on final fail
+- Success/fail logged",Medium,Backlog,"automation,payment",5
+"Feedback Ingestion Pipeline","Survey parsing, topic clustering, auto-improvement tasks.
+
+**Acceptance Criteria:**
+- Surveys parsed automatically
+- Topics clustered for analysis
+- Tasks created prioritized by ARR impact
+- Weekly summary to Linear",Medium,Backlog,"automation,subscription",8
+"Claims Checker Automation","Regex + rule engine for claim validation.
+
+**Acceptance Criteria:**
+- All claims scanned before publish
+- Overreach flagged automatically
+- Evidence links required
+- Bypass requires approval + log",Medium,Backlog,"automation,compliance",5

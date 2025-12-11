@@ -1,0 +1,74 @@
+{
+  "labels": [
+    {
+      "name": "validation",
+      "color": "#4CAF50",
+      "description": "Evidence and testing phase - requires proof artifacts"
+    },
+    {
+      "name": "evidence",
+      "color": "#2196F3",
+      "description": "Requires documented proof/artifacts to proceed"
+    },
+    {
+      "name": "gate",
+      "color": "#F44336",
+      "description": "Hard stop checkpoint - must pass to proceed"
+    },
+    {
+      "name": "automation",
+      "color": "#9C27B0",
+      "description": "Automated job or workflow"
+    },
+    {
+      "name": "security",
+      "color": "#E91E63",
+      "description": "Security-related task or concern"
+    },
+    {
+      "name": "payment",
+      "color": "#FF9800",
+      "description": "Payment, billing, or financial operations"
+    },
+    {
+      "name": "event",
+      "color": "#00BCD4",
+      "description": "Genesis Key Drop event related"
+    },
+    {
+      "name": "subscription",
+      "color": "#8BC34A",
+      "description": "Recurring revenue and subscriber management"
+    },
+    {
+      "name": "risk",
+      "color": "#FF5722",
+      "description": "Tracked hazard requiring mitigation"
+    },
+    {
+      "name": "compliance",
+      "color": "#607D8B",
+      "description": "Legal, regulatory, or policy compliance"
+    },
+    {
+      "name": "P1-urgent",
+      "color": "#D32F2F",
+      "description": "Urgent priority - immediate action required"
+    },
+    {
+      "name": "P2-high",
+      "color": "#F57C00",
+      "description": "High priority - this week"
+    },
+    {
+      "name": "P3-medium",
+      "color": "#FBC02D",
+      "description": "Medium priority - this sprint"
+    },
+    {
+      "name": "P4-low",
+      "color": "#388E3C",
+      "description": "Low priority - when available"
+    }
+  ]
+}

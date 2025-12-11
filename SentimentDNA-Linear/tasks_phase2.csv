@@ -1,0 +1,92 @@
+Title,Description,Priority,Status,Labels,Estimate
+"Narrative Deck Creation","Build empirical value deck with methodology guardrails, limits, and ethics.
+
+**Acceptance Criteria:**
+- Single-page summary complete
+- Deep dossier companion document
+- Reviewed by 2 external advisors
+- Version controlled and hash-stamped",High,Backlog,"compliance,evidence",5
+"FAQ Documentation","Comprehensive FAQ covering methodology, limitations, and ethical stance.
+
+**Acceptance Criteria:**
+- 25+ common questions addressed
+- Legal review passed
+- Published to secure portal
+- Version controlled",High,Backlog,"compliance",3
+"Host Script Development","Create script for host-led presentation with founder off-stage.
+
+**Acceptance Criteria:**
+- Full script with timing markers
+- Contingency prompts included
+- Q&A boundaries defined
+- Approved by all stakeholders",High,Backlog,"event",3
+"Rehearsal Execution","Conduct 2 full rehearsals with live-switch testing.
+
+**Acceptance Criteria:**
+- 2 rehearsals completed
+- Issues documented and resolved
+- Timing validated
+- Fallback procedures tested",High,Backlog,"event",5
+"Tier Matrix Definition","Define Early Believer, Whale Table, Ghost Ticket tiers.
+
+**Acceptance Criteria:**
+- Benefits clearly documented
+- Limits enforced technically
+- Refund policy published
+- Price tests documented",High,Backlog,"payment",3
+"Soulbound Key Architecture","Implement non-transferable key issuance, expiry, and revocation.
+
+**Acceptance Criteria:**
+- Issuance logs captured
+- Gated access confirms membership
+- Revocation tested end-to-end
+- Audit trail complete",High,Backlog,"event,gate",8
+"Payment Gateway Integration","Integrate card, wire, and crypto payment methods.
+
+**Acceptance Criteria:**
+- All 3 methods tested with live transactions
+- Invoicing automated
+- Zero reconciliation drift
+- Refund SLA defined and tested",High,Backlog,"payment",8
+"Dunning Sequence Setup","Implement payment retry and dunning workflows.
+
+**Acceptance Criteria:**
+- 30/7/1 day reminders configured
+- Grace period logic implemented
+- Recovery rate tracking live
+- Escalation paths defined",Medium,Backlog,"payment,automation",5
+"Collateral Publisher Automation","Versioned static site updates with checksum embed and rollback.
+
+**Acceptance Criteria:**
+- Deploy pipeline automated
+- Checksum recorded per version
+- One-click rollback tested
+- CDN cache invalidation working",Medium,Backlog,"automation",5
+"Event Asset Bundler","Compile slides, videos, prompts with checksum and release tags.
+
+**Acceptance Criteria:**
+- Bundle script automated
+- Checksums posted to Linear
+- Git release tags created
+- Asset inventory documented",Medium,Backlog,"automation,event",5
+"Key Mint/Gate System","Issuance script with retries, gating webhook, expiry crons.
+
+**Acceptance Criteria:**
+- Mint succeeds with retry logic
+- Webhook validates membership
+- Expiry cron runs daily
+- Audit log to dashboard",High,Backlog,"automation,event",8
+"Payment Webhooks Handler","Success/fail tickets, refund automation with supervisor approval.
+
+**Acceptance Criteria:**
+- Webhook captures all payment events
+- Auto-tickets created on failure
+- Refund requires approval
+- Dunning sequence triggers correctly",High,Backlog,"automation,payment",5
+"Compliance Guardrails Engine","Scripts blocking claims beyond validated metrics.
+
+**Acceptance Criteria:**
+- Regex + rule engine implemented
+- Redlines enforced in copy
+- Override requires evidence link
+- Audit trail for exceptions",High,Backlog,"compliance,automation",5

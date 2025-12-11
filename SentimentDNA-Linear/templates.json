@@ -1,0 +1,253 @@
+{
+  "templates": {
+    "epic": {
+      "name": "Epic Template",
+      "fields": [
+        {
+          "name": "Objective",
+          "type": "text",
+          "required": true,
+          "description": "Clear statement of what this epic achieves"
+        },
+        {
+          "name": "Gate Criteria",
+          "type": "text",
+          "required": true,
+          "description": "Conditions that must be met to pass gate"
+        },
+        {
+          "name": "Evidence Required",
+          "type": "text",
+          "required": true,
+          "description": "List of artifacts needed for validation"
+        },
+        {
+          "name": "Risks",
+          "type": "relation",
+          "required": false,
+          "description": "Linked risk issues"
+        },
+        {
+          "name": "Owner",
+          "type": "user",
+          "required": true
+        },
+        {
+          "name": "Due Date",
+          "type": "date",
+          "required": false
+        }
+      ],
+      "sections": [
+        "Scope",
+        "Milestones",
+        "Automation Jobs",
+        "SLOs",
+        "Runbooks",
+        "Dependencies"
+      ]
+    },
+    "task": {
+      "name": "Task Template",
+      "fields": [
+        {
+          "name": "Acceptance Criteria",
+          "type": "text",
+          "required": true,
+          "description": "Clear pass/fail conditions"
+        },
+        {
+          "name": "Evidence Checklist",
+          "type": "checklist",
+          "required": true,
+          "items": [
+            "Data captured",
+            "Evidence attached",
+            "Tests passed",
+            "Gate verified",
+            "Comms updated"
+          ]
+        },
+        {
+          "name": "Risk Linkage",
+          "type": "relation",
+          "required": false,
+          "description": "Associated risk issues"
+        },
+        {
+          "name": "Rollback Steps",
+          "type": "text",
+          "required": false,
+          "description": "How to undo if needed"
+        },
+        {
+          "name": "Owner",
+          "type": "user",
+          "required": true
+        },
+        {
+          "name": "Reviewer",
+          "type": "user",
+          "required": false
+        }
+      ]
+    },
+    "test": {
+      "name": "Test Template",
+      "fields": [
+        {
+          "name": "Scenario",
+          "type": "text",
+          "required": true,
+          "description": "What is being tested"
+        },
+        {
+          "name": "Inputs",
+          "type": "text",
+          "required": true,
+          "description": "Test data and conditions"
+        },
+        {
+          "name": "Expected Outputs",
+          "type": "text",
+          "required": true,
+          "description": "What should happen"
+        },
+        {
+          "name": "Actual Result",
+          "type": "select",
+          "required": true,
+          "options": ["Not Run", "Pass", "Fail", "Blocked"]
+        },
+        {
+          "name": "Artifacts",
+          "type": "attachment",
+          "required": false,
+          "description": "Plots, CSVs, screenshots"
+        },
+        {
+          "name": "Reviewer",
+          "type": "user",
+          "required": true
+        }
+      ],
+      "behavior": {
+        "blocks_parent": true,
+        "requires_pass_to_proceed": true
+      }
+    },
+    "runbook": {
+      "name": "Runbook Template",
+      "sections": [
+        {
+          "name": "Preconditions",
+          "description": "What must be true before starting"
+        },
+        {
+          "name": "Steps",
+          "description": "Numbered step-by-step instructions"
+        },
+        {
+          "name": "Verification",
+          "description": "How to confirm success"
+        },
+        {
+          "name": "Rollback",
+          "description": "Steps to undo changes"
+        },
+        {
+          "name": "Logs to Capture",
+          "description": "What evidence to preserve"
+        },
+        {
+          "name": "Escalation Contacts",
+          "description": "Who to call if issues arise"
+        }
+      ]
+    },
+    "risk": {
+      "name": "Risk Template",
+      "fields": [
+        {
+          "name": "Likelihood",
+          "type": "select",
+          "required": true,
+          "options": ["Low", "Medium", "High", "Critical"]
+        },
+        {
+          "name": "Impact",
+          "type": "select",
+          "required": true,
+          "options": ["Low", "Medium", "High", "Critical"]
+        },
+        {
+          "name": "Mitigation",
+          "type": "text",
+          "required": true,
+          "description": "How this risk is being addressed"
+        },
+        {
+          "name": "Trigger",
+          "type": "text",
+          "required": true,
+          "description": "What indicates this risk is materializing"
+        },
+        {
+          "name": "Owner",
+          "type": "user",
+          "required": true
+        },
+        {
+          "name": "Review Date",
+          "type": "date",
+          "required": true
+        }
+      ],
+      "policy": {
+        "high_impact_requires_mitigation": true,
+        "blocks_live_state_if_unmitigated": true
+      }
+    },
+    "automation": {
+      "name": "Automation Template",
+      "fields": [
+        {
+          "name": "Trigger",
+          "type": "select",
+          "required": true,
+          "options": ["Scheduled", "On-demand", "Event-driven", "On completion"]
+        },
+        {
+          "name": "Schedule",
+          "type": "text",
+          "required": false,
+          "description": "Cron expression or timing"
+        },
+        {
+          "name": "Steps",
+          "type": "text",
+          "required": true,
+          "description": "What the automation does"
+        },
+        {
+          "name": "Retry Policy",
+          "type": "text",
+          "required": true,
+          "description": "How failures are handled"
+        },
+        {
+          "name": "Fail Action",
+          "type": "text",
+          "required": true,
+          "description": "What happens on final failure"
+        },
+        {
+          "name": "Rollback",
+          "type": "text",
+          "required": false,
+          "description": "How to undo effects"
+        }
+      ]
+    }
+  }
+}

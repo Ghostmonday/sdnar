@@ -1,0 +1,152 @@
+Title,Description,Priority,Status,Labels,Estimate
+"Data Source Outage","Feed provider experiences downtime or latency.
+
+**Likelihood:** Medium
+**Impact:** High
+
+**Mitigations:**
+- Multi-source redundancy
+- 30s gap detection alerts
+- Auto-backfill from secondary
+- 4-hour manual intervention runbook
+
+**Trigger:** >2 minute feed gap or >5s latency
+
+**Owner:** Data Engineering
+**Review Date:** Weekly",High,Backlog,"risk",
+"Model Performance Degradation","Accuracy drops below acceptable thresholds.
+
+**Likelihood:** Medium
+**Impact:** High
+
+**Mitigations:**
+- Daily evaluation runs
+- Automatic regression detection
+- Block deployment on failure
+- Retrain pipeline on standby
+
+**Trigger:** Any metric below threshold for 2 consecutive runs
+
+**Owner:** ML Engineering
+**Review Date:** Weekly",High,Backlog,"risk,validation",
+"Payment Gateway Failure","Primary payment processor unavailable.
+
+**Likelihood:** Low
+**Impact:** Critical
+
+**Mitigations:**
+- Backup payment processor configured
+- Automatic failover
+- Grace period for renewals
+- Manual processing runbook
+
+**Trigger:** Gateway returns errors for >5 minutes
+
+**Owner:** Finance Ops
+**Review Date:** Monthly",High,Backlog,"risk,payment",
+"Founder Identity Exposure","Founder name/identity leaked publicly.
+
+**Likelihood:** Low
+**Impact:** Critical
+
+**Mitigations:**
+- Host-only policy enforced
+- Brand monitoring active
+- Takedown procedures ready
+- Crisis comms prepared
+
+**Trigger:** Monitoring alert or report
+
+**Owner:** Security
+**Review Date:** Weekly",Urgent,Backlog,"risk,security",
+"Legal/Regulatory Challenge","Claims challenged by regulators or litigants.
+
+**Likelihood:** Low
+**Impact:** Critical
+
+**Mitigations:**
+- Evidence locker for all claims
+- Counsel review before publish
+- Claims checker automation
+- Insurance coverage
+
+**Trigger:** Cease and desist or inquiry received
+
+**Owner:** Legal
+**Review Date:** Monthly",High,Backlog,"risk,compliance",
+"Live Event Technical Failure","Stream, auction, or registration system fails during event.
+
+**Likelihood:** Medium
+**Impact:** High
+
+**Mitigations:**
+- Full dry runs completed
+- Backup streaming platform
+- Manual auction fallback
+- Communication templates ready
+
+**Trigger:** System unresponsive during live window
+
+**Owner:** Event Ops
+**Review Date:** Pre-event",High,Backlog,"risk,event",
+"Key Issuance Failure","Unable to mint or deliver access keys.
+
+**Likelihood:** Low
+**Impact:** High
+
+**Mitigations:**
+- 5x retry with backoff
+- Manual issuance fallback
+- Payment hold until resolved
+- Customer communication templates
+
+**Trigger:** Key mint fails after all retries
+
+**Owner:** Engineering
+**Review Date:** Post-event",High,Backlog,"risk,event",
+"Churn Spike","Unexpected increase in subscription cancellations.
+
+**Likelihood:** Medium
+**Impact:** High
+
+**Mitigations:**
+- Churn reason tracking
+- Win-back campaigns ready
+- Downgrade offers automated
+- Immediate analysis protocol
+
+**Trigger:** Churn rate >2x baseline for any week
+
+**Owner:** Customer Success
+**Review Date:** Weekly",Medium,Backlog,"risk,subscription",
+"Data Breach","Unauthorized access to member or business data.
+
+**Likelihood:** Low
+**Impact:** Critical
+
+**Mitigations:**
+- Encryption at rest and in transit
+- Access logging
+- Incident response plan
+- Insurance coverage
+- Breach notification templates
+
+**Trigger:** Anomalous access pattern or alert
+
+**Owner:** Security
+**Review Date:** Weekly",Urgent,Backlog,"risk,security",
+"Deepfake/Impersonation Attack","Synthetic media used to impersonate founders or host.
+
+**Likelihood:** Low
+**Impact:** High
+
+**Mitigations:**
+- Media monitoring active
+- Verification protocols with partners
+- Rapid takedown procedures
+- Public statement templates
+
+**Trigger:** Report or monitoring alert
+
+**Owner:** Security
+**Review Date:** Monthly",Medium,Backlog,"risk,security",

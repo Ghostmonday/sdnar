@@ -1,0 +1,180 @@
+Title,Description,Priority,Status,Labels,Estimate
+"Data Integrity Nightly Job","Checksums, schema diffs, drift reports.
+
+**Type:** Automation
+
+**Schedule:** Daily at 02:00 UTC
+
+**Steps:**
+1. Pull latest data from all sources
+2. Compute checksums for each table
+3. Compare against previous day
+4. Generate drift report
+5. If drift > 0.1%, create Linear ticket
+6. Upload report to evidence locker
+
+**Retry:** 3 attempts with exponential backoff
+**Fail Action:** Create P1 incident, page on-call
+
+**Rollback:** Not applicable (read-only job)",High,Backlog,"automation,validation",8
+"Benchmark Pipeline Runner","Parameter grid runs, artifact bundling, reporting.
+
+**Type:** Automation
+
+**Schedule:** Weekly Sunday 00:00 UTC + On-demand
+
+**Steps:**
+1. Load parameter configurations
+2. Execute grid across all models
+3. Collect metrics and artifacts
+4. Bundle into versioned ZIP
+5. Hash-stamp and upload
+6. Update Linear milestone with results
+
+**Retry:** 2 attempts per model
+**Fail Action:** Partial results published, ticket for failures
+
+**Rollback:** Revert to previous benchmark set",High,Backlog,"automation,validation",13
+"Backtest Orchestrator","Sliding windows, embargo logic, failure handling.
+
+**Type:** Automation
+
+**Schedule:** On milestone completion
+
+**Steps:**
+1. Validate embargo periods
+2. Execute sliding window backtests
+3. Compare against thresholds
+4. Flag regressions
+5. Generate signed report
+6. Block Validation state if thresholds missed
+
+**Retry:** 3 attempts on transient errors
+**Fail Action:** Block progression, escalate
+
+**Rollback:** Mark milestone as failed, requeue",Urgent,Backlog,"automation,gate",13
+"Key Issuance Service","Mint soulbound keys, handle retries, audit logging.
+
+**Type:** Automation
+
+**Trigger:** On payment confirmation
+
+**Steps:**
+1. Validate payment webhook
+2. Generate unique key
+3. Stamp with expiry date
+4. Associate with member record
+5. Enable gated access
+6. Log to audit trail
+
+**Retry:** 5 attempts with backoff
+**Fail Action:** Hold payment, notify support
+
+**Rollback:** Revoke key, refund payment",High,Backlog,"automation,event",8
+"Payment Reconciliation Job","Nightly balance checks, discrepancy handling.
+
+**Type:** Automation
+
+**Schedule:** Daily at 04:00 UTC
+
+**Steps:**
+1. Pull transactions from gateway
+2. Compare against internal ledger
+3. Flag discrepancies
+4. Create ticket for each mismatch
+5. Mark access pending until cleared
+
+**Retry:** 3 attempts
+**Fail Action:** Escalate to finance
+
+**Rollback:** Not applicable",High,Backlog,"automation,payment",5
+"Content Drop Assembler","Insight packaging, claims checking, delivery.
+
+**Type:** Automation
+
+**Schedule:** Per tier cadence (Weekly/Biweekly)
+
+**Steps:**
+1. Pull latest insights
+2. Run claims checker
+3. Package for each tier
+4. Deploy to delivery channels
+5. Log coverage stats to Linear
+6. Alert on delivery failures
+
+**Retry:** 3 attempts per channel
+**Fail Action:** Partial delivery, escalate
+
+**Rollback:** Recall and resend corrected",Medium,Backlog,"automation,subscription",8
+"Auction Settlement Processor","Identity validation, fund confirmation, ledger posting.
+
+**Type:** Automation
+
+**Trigger:** On auction close
+
+**Steps:**
+1. Validate winner identity
+2. Confirm funds cleared
+3. Post final ledger
+4. Trigger key award
+5. Generate press release draft
+6. Notify stakeholders
+
+**Retry:** 2 attempts on fund verification
+**Fail Action:** Reserve winner notified
+
+**Rollback:** Void auction, refund all",High,Backlog,"automation,event",8
+"Brand Monitoring Service","Mentions, domain lookups, media flags.
+
+**Type:** Automation
+
+**Schedule:** Every 15 minutes
+
+**Steps:**
+1. Query monitoring APIs
+2. Filter for relevance
+3. Assess threat level
+4. Create incident if high
+5. Push to security dashboard
+6. Inject runbook link
+
+**Retry:** Continuous
+**Fail Action:** Fall back to hourly
+
+**Rollback:** Not applicable",High,Backlog,"automation,security",5
+"Model Evaluation Runner","Scheduled/on-demand model assessment.
+
+**Type:** Automation
+
+**Schedule:** Daily + On code change
+
+**Steps:**
+1. Pull latest model weights
+2. Run evaluation suite
+3. Compare against baselines
+4. Push metrics to dashboard
+5. Open Change issue if threshold slips
+6. Update Linear with artifacts
+
+**Retry:** 2 attempts
+**Fail Action:** Block deployment
+
+**Rollback:** Revert to previous model",Urgent,Backlog,"automation,validation",13
+"Weekly Review Generator","Auto-create summary issues with metrics.
+
+**Type:** Automation
+
+**Schedule:** Every Monday 09:00 UTC
+
+**Steps:**
+1. Aggregate week's metrics
+2. Summarize completed issues
+3. List blockers
+4. Generate weekly review issue
+5. Tag stakeholders
+6. Schedule meeting reminder
+
+**Retry:** Not applicable
+**Fail Action:** Manual creation
+
+**Rollback:** Not applicable",Medium,Backlog,"automation",3

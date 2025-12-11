@@ -1,0 +1,7 @@
+Title,Description,Priority,Status,Labels,Estimate
+"Phase 1 — Product Validation","Absolute certainty in data integrity, model accuracy, and testing rigor. All claims must be backed by evidence. Gate: Accuracy thresholds met in 3 independent datasets.",Urgent,Backlog,"validation,evidence,gate",
+"Phase 2 — Monetization Architecture","Controlled debut of pricing, messaging, and payment systems. Host-led presentation with founder off-stage. Gate: All tiers tested with live transactions.",High,Backlog,"payment,compliance",
+"Genesis Key Drop — Event Execution","Live event for soulbound key issuance and whale table auction. Registration, KYC-lite, and conversion flows. Gate: Dry runs passed.",High,Backlog,"event,gate",
+"Recurring Revenue — Subscription Engine","Subscription tiers ($500/$1,500/$5,000), insight delivery, renewal/dunning, and member observability. Gate: NPS > 50.",Medium,Backlog,"subscription,payment",
+"Founder Protection — Identity, Privacy, Safety","Identity insulation, threat modeling, surface minimization, and crisis playbooks. Gate: All public materials list host only.",High,Backlog,"security,compliance",
+"Ops Backbone — Automation, Observability, Runbooks","Workflow states, zero-chance gates, dashboards, alerts, and SLOs. Gate: All automations retriable and fail-closed.",Medium,Backlog,"automation,gate",
