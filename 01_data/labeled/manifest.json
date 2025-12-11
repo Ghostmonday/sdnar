@@ -9,64 +9,44 @@
   "config_hash": "14bdc7cfdf9fc70b8dd2ef9e4e6376fa7efb4908afcd52c2da0eef0dbeee6177",
   "inputs": {
     "SPY": {
-      "path": "C:\\Users\\Amirp\\OneDrive\\Documents\\Backup\\01_Development\\S-DNA\\00_research\\scripts\\..\\..\\01_data\\equities\\spy_daily.csv",
+      "path": "01_data/equities/spy_daily.csv",
       "hash": "f69088927171569503211cf8d996295133e1fd38083b41c0aab5b034fa19470b"
     },
     "QQQ": {
-      "path": "C:\\Users\\Amirp\\OneDrive\\Documents\\Backup\\01_Development\\S-DNA\\00_research\\scripts\\..\\..\\01_data\\equities\\qqq_daily.csv",
+      "path": "01_data/equities/qqq_daily.csv",
       "hash": "a2c7e99eeb2481303b3d71497fa7d2715e50ac8bc7196619abeabd58e5c2c4bf"
     },
     "GLD": {
-      "path": "C:\\Users\\Amirp\\OneDrive\\Documents\\Backup\\01_Development\\S-DNA\\00_research\\scripts\\..\\..\\01_data\\equities\\gld_daily.csv",
+      "path": "01_data/equities/gld_daily.csv",
       "hash": "07b1d0c29f0fe9982ae38cca17390bff84bd26dc3af448bd493a834542ac29d8"
     },
     "BTC": {
-      "path": "C:\\Users\\Amirp\\OneDrive\\Documents\\Backup\\01_Development\\S-DNA\\00_research\\scripts\\..\\..\\01_data\\crypto\\btc_usd_full.csv",
+      "path": "01_data/crypto/btc_usd_full.csv",
       "hash": "dce7ce6b972c06c816e0eafdfbafd70db2c164f0782338e908b65753a1057b6c"
     }
   },
   "outputs": {
     "SPY": {
-      "path": "C:\\Users\\Amirp\\OneDrive\\Documents\\Backup\\01_Development\\S-DNA\\00_research\\scripts\\..\\..\\01_data\\labeled\\spy_labeled.csv",
+      "path": "01_data/labeled/spy_labeled.csv",
       "hash": "bff6b9d57c0586d666f87d3390a8c5ad6db10820f8aa7ff72614bc54c33fb2e3"
     },
     "QQQ": {
-      "path": "C:\\Users\\Amirp\\OneDrive\\Documents\\Backup\\01_Development\\S-DNA\\00_research\\scripts\\..\\..\\01_data\\labeled\\qqq_labeled.csv",
+      "path": "01_data/labeled/qqq_labeled.csv",
       "hash": "f8b2235f8be9bb8e3a8a68e4ca354d6b5cabafcce44dc2055f26a5a81f77dfab"
     },
     "GLD": {
-      "path": "C:\\Users\\Amirp\\OneDrive\\Documents\\Backup\\01_Development\\S-DNA\\00_research\\scripts\\..\\..\\01_data\\labeled\\gld_labeled.csv",
+      "path": "01_data/labeled/gld_labeled.csv",
       "hash": "47af2db277aeda82d4f62295234738245efc0a26722940b9af3f3760d0d8893d"
     },
     "BTC": {
-      "path": "C:\\Users\\Amirp\\OneDrive\\Documents\\Backup\\01_Development\\S-DNA\\00_research\\scripts\\..\\..\\01_data\\labeled\\btc_labeled.csv",
+      "path": "01_data/labeled/btc_labeled.csv",
       "hash": "410de6774d78f65f9ae8e285bfd8fbf69c8292eab8bae866a7bdd96ab9850396"
     }
   },
   "label_distributions": {
-    "SPY": {
-      "bull": 2735,
-      "bear": 2158,
-      "neutral": 1369,
-      "invalid": 12
-    },
-    "QQQ": {
-      "bull": 2776,
-      "bear": 2232,
-      "neutral": 1254,
-      "invalid": 12
-    },
-    "GLD": {
-      "bull": 2238,
-      "bear": 1712,
-      "neutral": 1086,
-      "invalid": 12
-    },
-    "BTC": {
-      "bull": 1507,
-      "bear": 1043,
-      "neutral": 1175,
-      "invalid": 12
-    }
+    "SPY": { "bull": 2735, "bear": 2158, "neutral": 1369, "invalid": 12 },
+    "QQQ": { "bull": 2776, "bear": 2232, "neutral": 1254, "invalid": 12 },
+    "GLD": { "bull": 2238, "bear": 1712, "neutral": 1086, "invalid": 12 },
+    "BTC": { "bull": 1507, "bear": 1043, "neutral": 1175, "invalid": 12 }
   }
 }

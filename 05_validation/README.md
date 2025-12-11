@@ -1,29 +1,43 @@
-# SR 11-7 Validation Dossier
+# 05_validation — SR 11-7 Compliance Dossier
 
-Components for the final validation report (Federal Reserve/OCC compliance standard).
+This directory will contain the final validation documentation required for institutional deployment, following Federal Reserve SR 11-7 model risk management guidelines.
 
-## Dossier Structure
+## Dossier Structure (Phase V)
 
 ### Section 1: Conceptual Soundness
-
-- `conceptual_soundness.md` — Theoretical basis, data lineage, EMH rebuttal
+- Theoretical basis and literature review
+- Data lineage and preprocessing documentation
+- EMH rebuttal with empirical evidence
 
 ### Section 2: Ongoing Monitoring
-
-- `monitoring_plan.md` — Drift detection, thresholds, audit trail
+- Drift detection framework
+- Alert thresholds and escalation procedures
+- Model retraining triggers
 
 ### Section 3: Outcomes Analysis
-
-- `outcomes_analysis.md` — Consolidated evidence, benchmark comparisons, stress tests
+- Consolidated benchmark comparisons
+- Regime-specific performance analysis
+- Stress test results
 
 ## Go/No-Go Decision Matrix
 
-| Criterion             | Required | Actual | Pass? |
-| --------------------- | -------- | ------ | ----- |
-| DSR > 1.0             | Yes      | -      | -     |
-| Blind Test Passed     | Yes      | -      | -     |
-| Stress Test Survived  | Yes      | -      | -     |
-| All Claims Evidenced  | Yes      | -      | -     |
-| Drift Monitors Active | Yes      | -      | -     |
+| Criterion | Required | Actual | Status |
+|-----------|----------|--------|--------|
+| DSR > 1.0 (beats baseline) | Yes | - | ⏳ Pending |
+| Blind Test Passed | Yes | - | ⏳ Pending |
+| Stress Test Survived | Yes | - | ⏳ Pending |
+| All Claims Evidenced | Yes | - | ⏳ Pending |
+| Drift Monitors Active | Yes | - | ⏳ Pending |
 
-_To be completed at Phase V_
+## Current Status
+
+**Phase V — Not Yet Started**
+
+Prerequisites:
+- [ ] Phase II: LSTM training complete
+- [ ] Phase III: Walk-forward validation complete
+- [ ] Phase IV: Stress testing complete
+
+---
+
+*This dossier will be populated upon completion of validation phases.*
