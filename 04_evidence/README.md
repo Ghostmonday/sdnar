@@ -19,10 +19,24 @@ All artifacts include SHA-256 checksums recorded in the manifest below.
 
 ## Manifest
 
-| Date      | Artifact          | Type      | SHA-256   |
-| --------- | ----------------- | --------- | --------- |
-| _pending_ | _research output_ | _pending_ | _pending_ |
+| Date       | Artifact                         | Type     | SHA-256 (first 8)                  |
+| ---------- | -------------------------------- | -------- | ---------------------------------- |
+| 2025-12-10 | spy_labeled.csv                  | DATA     | bff6b9d5 (full in labeled/manifest)|
+| 2025-12-10 | qqq_labeled.csv                  | DATA     | f8b2235f (full in labeled/manifest)|
+| 2025-12-10 | gld_labeled.csv                  | DATA     | 47af2db2 (full in labeled/manifest)|
+| 2025-12-10 | btc_labeled.csv                  | DATA     | 410de677 (full in labeled/manifest)|
+| 2025-12-10 | regime_analysis.json             | ANALYSIS | See 01_data/regimes/               |
+| 2025-12-10 | baseline_results.csv             | METRICS  | See 02_benchmarks/                 |
+| 2025-12-10 | deep_research_full.md            | REPORT   | Present in this folder             |
+| 2025-12-10 | data_engineering_gemini_report.md| REPORT   | Present in this folder             |
+| 2025-12-10 | labeling_gemini_report.md        | REPORT   | Present in this folder             |
+| 2025-12-10 | order5_research_synthesis.md     | REPORT   | Present in this folder             |
+
+## Hash Sources
+
+- **Labeled Data**: Full SHA-256 hashes in `01_data/labeled/manifest.json`
+- **Config Hash**: `14bdc7cfdf9fc70b8dd2ef9e4e6376fa7efb4908afcd52c2da0eef0dbeee6177`
 
 ---
 
-_Artifacts will be added as research completes._
+_Phase I artifacts logged. Config: volatility_span=20, barrier_width=2.0, vertical_barrier=10_
